@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -45,6 +45,8 @@ export default function DashboardPage() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingTracker, setEditingTracker] = useState<TrackerItem | null>(null);
   const [userNtfyTopic, setUserNtfyTopic] = useState<string>("");
+  const [isLiveConnected, setIsLiveConnected] = useState(false);
+  const liveStreamConnectedRef = useRef(false);
 
   // Fetch trackers and stats with persistent client-side caching & auto-sync
   const fetchTrackers = useCallback(async (showRefreshing = false) => {
@@ -148,12 +150,41 @@ export default function DashboardPage() {
     fetchTrackers();
     fetchNotificationSettings();
 
-    // Auto refresh every 15 seconds
-    const interval = setInterval(() => {
-      fetchTrackers();
+    const eventSource = new EventSource("/api/trackers/stream");
+    const applyLiveSnapshot = (event: MessageEvent<string>) => {
+      try {
+        const snapshot = JSON.parse(event.data);
+        const liveTrackers: TrackerItem[] = snapshot.data || [];
+        setTrackers(liveTrackers);
+        setStats(snapshot.stats);
+        if (typeof window !== "undefined") {
+          window.localStorage.setItem("sih_local_trackers", JSON.stringify(liveTrackers));
+        }
+      } catch (error) {
+        console.error("Invalid live tracker update:", error);
+      }
+    };
+
+    eventSource.addEventListener("trackers", applyLiveSnapshot);
+    eventSource.onopen = () => {
+      liveStreamConnectedRef.current = true;
+      setIsLiveConnected(true);
+    };
+    eventSource.onerror = () => {
+      liveStreamConnectedRef.current = false;
+      setIsLiveConnected(false);
+    };
+
+    // Keep a slower fallback for deployments that cannot hold an SSE connection.
+    const fallbackInterval = setInterval(() => {
+      if (!liveStreamConnectedRef.current) fetchTrackers();
     }, 15000);
 
-    return () => clearInterval(interval);
+    return () => {
+      eventSource.close();
+      liveStreamConnectedRef.current = false;
+      clearInterval(fallbackInterval);
+    };
   }, [fetchTrackers, fetchNotificationSettings]);
 
   // Handle Enable/Disable Toggle
@@ -233,8 +264,14 @@ export default function DashboardPage() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2.5">
               SIH Problem Statement Dashboard
-              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300">
-                Live Monitoring
+              <span
+                className={`text-xs font-semibold px-2.5 py-0.5 rounded-full border ${
+                  isLiveConnected
+                    ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-300"
+                    : "bg-amber-500/10 border-amber-500/20 text-amber-300"
+                }`}
+              >
+                {isLiveConnected ? "Live Updates" : "Reconnecting"}
               </span>
             </h1>
             <p className="text-xs sm:text-sm text-slate-400 mt-1">
