@@ -111,6 +111,16 @@ export function AddTrackerModal({ isOpen, onClose, onSuccess }: AddTrackerModalP
       const data = await res.json();
 
       if (res.ok && data.success) {
+        // Immediately persist to client storage
+        if (typeof window !== "undefined" && data.data) {
+          try {
+            const raw = window.localStorage.getItem("sih_local_trackers");
+            const existing = raw ? JSON.parse(raw) : [];
+            const filtered = Array.isArray(existing) ? existing.filter((t: any) => t.psId !== data.data.psId) : [];
+            window.localStorage.setItem("sih_local_trackers", JSON.stringify([data.data, ...filtered]));
+          } catch (e) {}
+        }
+
         setSuccessMessage(data.message || "Tracker added successfully!");
         setTimeout(() => {
           onSuccess();

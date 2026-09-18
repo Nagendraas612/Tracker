@@ -50,18 +50,18 @@ export default function DashboardPage() {
   const fetchTrackers = useCallback(async (showRefreshing = false) => {
     if (showRefreshing) setIsRefreshing(true);
     try {
-      // 1. First, check if client localStorage has cached trackers to avoid empty screen flicker
+      // 1. Read existing local snapshot
+      let localList: TrackerItem[] = [];
       if (typeof window !== "undefined") {
-        const cached = window.localStorage.getItem("sih_local_trackers");
-        if (cached) {
+        const raw = window.localStorage.getItem("sih_local_trackers");
+        if (raw) {
           try {
-            const parsed = JSON.parse(cached);
+            const parsed = JSON.parse(raw);
             if (Array.isArray(parsed) && parsed.length > 0) {
+              localList = parsed;
               setTrackers((prev) => (prev.length === 0 ? parsed : prev));
             }
-          } catch (e) {
-            // Ignore parse error
-          }
+          } catch (e) {}
         }
       }
 
@@ -69,45 +69,53 @@ export default function DashboardPage() {
       const data = await res.json();
 
       if (res.ok && data.success) {
-        const serverTrackers = data.data || [];
-        
-        // If server returned trackers, use them and persist to localStorage
-        if (serverTrackers.length > 0) {
-          setTrackers(serverTrackers);
-          if (typeof window !== "undefined") {
-            window.localStorage.setItem("sih_local_trackers", JSON.stringify(serverTrackers));
+        const serverList: TrackerItem[] = data.data || [];
+
+        // 2. Build smart merged map by psId so no tracker is ever lost across serverless restarts
+        const map = new Map<string, TrackerItem>();
+
+        // Add local trackers
+        localList.forEach((t) => {
+          if (t && t.psId) map.set(t.psId, t);
+        });
+
+        // Overlay updates from server (latest submission count, notification status, etc.)
+        serverList.forEach((st) => {
+          if (st && st.psId) {
+            const existing = map.get(st.psId);
+            map.set(st.psId, { ...(existing || {}), ...st });
           }
-        } else {
-          // If server returned 0 (e.g. Vercel serverless instance rebooted /tmp),
-          // recover from client localStorage and re-sync to serverless backend
-          if (typeof window !== "undefined") {
-            const cached = window.localStorage.getItem("sih_local_trackers");
-            if (cached) {
-              try {
-                const parsed = JSON.parse(cached);
-                if (Array.isArray(parsed) && parsed.length > 0) {
-                  setTrackers(parsed);
-                  // Re-sync to server in background
-                  for (const t of parsed) {
-                    fetch("/api/trackers", {
-                      method: "POST",
-                      headers: { "Content-Type": "application/json" },
-                      body: JSON.stringify({ psId: t.psId, target: t.target }),
-                    }).catch(() => {});
-                  }
-                }
-              } catch (e) {}
-            }
-          }
+        });
+
+        const merged = Array.from(map.values());
+        setTrackers(merged);
+
+        if (typeof window !== "undefined") {
+          window.localStorage.setItem("sih_local_trackers", JSON.stringify(merged));
         }
 
-        if (data.stats) {
-          setStats(data.stats);
-        }
+        // 3. If any tracker exists in client storage but missing in the current serverless instance, sync it back
+        const serverPsIds = new Set(serverList.map((s) => s.psId));
+        localList.forEach((lt) => {
+          if (!serverPsIds.has(lt.psId)) {
+            fetch("/api/trackers", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ psId: lt.psId, target: lt.target }),
+            }).catch(() => {});
+          }
+        });
+
+        setStats({
+          totalTrackers: merged.length,
+          activeMonitoring: merged.filter((t) => t.enabled && t.status === "monitoring").length,
+          targetsReached: merged.filter((t) => t.status === "reached").length,
+          notificationsSent: merged.filter((t) => t.notificationSent).length,
+        });
       }
     } catch (err) {
       console.error("Error fetching trackers:", err);
-      // On network error, hydrate from localStorage
+      // Hydrate from localStorage on error
       if (typeof window !== "undefined") {
         const cached = window.localStorage.getItem("sih_local_trackers");
         if (cached) {
