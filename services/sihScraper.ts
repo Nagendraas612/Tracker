@@ -203,11 +203,20 @@ export async function getProblemStatement(psIdInput: string): Promise<PSData | n
   if (data) return data;
 
   // Search case-insensitively across keys
-  for (const [key, val] of result.psMap.entries()) {
-    if (key.toUpperCase() === psId || key.toUpperCase() === psIdInput.trim().toUpperCase()) {
-      return val;
+  let matchedVal: PSData | null = null;
+  const targetId = psId.toUpperCase();
+  const rawId = psIdInput.trim().toUpperCase();
+
+  result.psMap.forEach((val, key) => {
+    if (!matchedVal) {
+      const uKey = key.toUpperCase();
+      if (uKey === targetId || uKey === rawId) {
+        matchedVal = val;
+      }
     }
-  }
+  });
+
+  if (matchedVal) return matchedVal;
 
   // Fallback demo mode only if explicitly enabled
   if (process.env.DEMO_MODE === "true") {
