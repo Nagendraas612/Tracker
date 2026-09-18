@@ -46,21 +46,77 @@ export default function DashboardPage() {
   const [editingTracker, setEditingTracker] = useState<TrackerItem | null>(null);
   const [userNtfyTopic, setUserNtfyTopic] = useState<string>("");
 
-  // Fetch trackers and stats
+  // Fetch trackers and stats with persistent client-side caching & auto-sync
   const fetchTrackers = useCallback(async (showRefreshing = false) => {
     if (showRefreshing) setIsRefreshing(true);
     try {
+      // 1. First, check if client localStorage has cached trackers to avoid empty screen flicker
+      if (typeof window !== "undefined") {
+        const cached = window.localStorage.getItem("sih_local_trackers");
+        if (cached) {
+          try {
+            const parsed = JSON.parse(cached);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              setTrackers((prev) => (prev.length === 0 ? parsed : prev));
+            }
+          } catch (e) {
+            // Ignore parse error
+          }
+        }
+      }
+
       const res = await fetch("/api/trackers");
       const data = await res.json();
 
       if (res.ok && data.success) {
-        setTrackers(data.data || []);
+        const serverTrackers = data.data || [];
+        
+        // If server returned trackers, use them and persist to localStorage
+        if (serverTrackers.length > 0) {
+          setTrackers(serverTrackers);
+          if (typeof window !== "undefined") {
+            window.localStorage.setItem("sih_local_trackers", JSON.stringify(serverTrackers));
+          }
+        } else {
+          // If server returned 0 (e.g. Vercel serverless instance rebooted /tmp),
+          // recover from client localStorage and re-sync to serverless backend
+          if (typeof window !== "undefined") {
+            const cached = window.localStorage.getItem("sih_local_trackers");
+            if (cached) {
+              try {
+                const parsed = JSON.parse(cached);
+                if (Array.isArray(parsed) && parsed.length > 0) {
+                  setTrackers(parsed);
+                  // Re-sync to server in background
+                  for (const t of parsed) {
+                    fetch("/api/trackers", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ psId: t.psId, target: t.target }),
+                    }).catch(() => {});
+                  }
+                }
+              } catch (e) {}
+            }
+          }
+        }
+
         if (data.stats) {
           setStats(data.stats);
         }
       }
     } catch (err) {
       console.error("Error fetching trackers:", err);
+      // On network error, hydrate from localStorage
+      if (typeof window !== "undefined") {
+        const cached = window.localStorage.getItem("sih_local_trackers");
+        if (cached) {
+          try {
+            const parsed = JSON.parse(cached);
+            if (Array.isArray(parsed)) setTrackers(parsed);
+          } catch (e) {}
+        }
+      }
     } finally {
       setIsLoading(false);
       setIsRefreshing(false);
@@ -94,31 +150,51 @@ export default function DashboardPage() {
 
   // Handle Enable/Disable Toggle
   const handleToggleEnable = async (tracker: TrackerItem) => {
+    const updatedStatus = !tracker.enabled;
+    // Optimistic UI & localStorage update
+    const updatedList = trackers.map((t) =>
+      t._id === tracker._id ? { ...t, enabled: updatedStatus, status: updatedStatus ? "monitoring" as const : "disabled" as const } : t
+    );
+    setTrackers(updatedList);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("sih_local_trackers", JSON.stringify(updatedList));
+    }
+
     try {
       const res = await fetch(`/api/trackers/${tracker._id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ enabled: !tracker.enabled }),
+        body: JSON.stringify({ enabled: updatedStatus }),
       });
-      if (res.ok) {
-        fetchTrackers();
-      }
+      if (res.ok) fetchTrackers();
     } catch (err) {
-      console.error("Error toggling tracker:", err);
+      console.error("Toggle error:", err);
     }
   };
 
-  // Handle Remove Tracker
-  const handleDeleteTracker = async (tracker: TrackerItem) => {
+  // Handle Delete Tracker
+  const handleDeleteTracker = async (trackerOrId: TrackerItem | string) => {
+    const trackerId = typeof trackerOrId === "string" ? trackerOrId : trackerOrId._id;
+    if (!confirm("Are you sure you want to stop tracking and delete this Problem Statement?")) {
+      return;
+    }
+
+    // Optimistic UI & localStorage removal
+    const updatedList = trackers.filter((t) => t._id !== trackerId);
+    setTrackers(updatedList);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("sih_local_trackers", JSON.stringify(updatedList));
+    }
+
     try {
-      const res = await fetch(`/api/trackers/${tracker._id}`, {
+      const res = await fetch(`/api/trackers/${trackerId}`, {
         method: "DELETE",
       });
       if (res.ok) {
         fetchTrackers();
       }
     } catch (err) {
-      console.error("Error deleting tracker:", err);
+      console.error("Delete tracker error:", err);
     }
   };
 
