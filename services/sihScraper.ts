@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
 import axios from "axios";
+import sihSeedData from "@/lib/sihData.json";
 
 export interface PSData {
   psId: string;
@@ -18,10 +19,41 @@ export interface PSData {
 const SIH_URL = "https://sih.gov.in/sih2026PS";
 const CACHE_TTL_MS = 25000; // 25 seconds cache
 
+function getInitialSeedMap(): Map<string, PSData> {
+  const map = new Map<string, PSData>();
+  if (Array.isArray(sihSeedData)) {
+    sihSeedData.forEach((item: any) => {
+      const norm = normalizePsId(item.psId);
+      const data: PSData = {
+        psId: norm,
+        title: item.title,
+        organization: item.organization,
+        department: item.department || item.organization,
+        category: item.category || "Software",
+        theme: item.theme || "General",
+        submitted: Number(item.submitted) || 0,
+        maximum: Number(item.maximum) || 500,
+        deadline: item.deadline || "30 September 2026",
+        rawCountString: item.rawCountString || `${item.submitted || 0}/${item.maximum || 500}`,
+        lastFetched: new Date(item.lastFetched || Date.now()),
+      };
+      map.set(norm, data);
+      const digits = norm.replace(/\D/g, "");
+      if (digits && digits !== norm) {
+        map.set(digits, data);
+      }
+    });
+  }
+  return map;
+}
+
 let memoryCache: {
   data: Map<string, PSData>;
   timestamp: number;
-} | null = null;
+} | null = {
+  data: getInitialSeedMap(),
+  timestamp: Date.now() - 30000, // Seeded ready
+};
 
 /**
  * Normalizes a Problem Statement ID e.g. "sih26171" -> "SIH26171", "26171" -> "SIH26171"
@@ -61,7 +93,7 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
   const now = Date.now();
 
   // Return cached result if valid and not force-refreshed
-  if (!forceRefresh && memoryCache && now - memoryCache.timestamp < CACHE_TTL_MS) {
+  if (!forceRefresh && memoryCache && memoryCache.data.size > 0 && now - memoryCache.timestamp < CACHE_TTL_MS) {
     return {
       psMap: memoryCache.data,
       fromCache: true,
@@ -71,7 +103,7 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
 
   try {
     const response = await axios.get(SIH_URL, {
-      timeout: 20000,
+      timeout: 8000,
       headers: {
         "User-Agent":
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
