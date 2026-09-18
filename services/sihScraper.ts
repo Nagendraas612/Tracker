@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
 import axios from "axios";
+import https from "https";
 import sihSeedData from "@/lib/sihData.json";
 
 export interface PSData {
@@ -16,8 +17,17 @@ export interface PSData {
   lastFetched: Date;
 }
 
-const SIH_URL = "https://sih.gov.in/sih2026PS";
-const CACHE_TTL_MS = 25000; // 25 seconds cache
+const SIH_URLS = [
+  "https://sih.gov.in/sih2026PS",
+  "https://www.sih.gov.in/sih2026PS",
+];
+
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false,
+  keepAlive: true,
+});
+
+const CACHE_TTL_MS = 15000; // 15 seconds cache
 
 function getInitialSeedMap(): Map<string, PSData> {
   const map = new Map<string, PSData>();
@@ -52,7 +62,7 @@ let memoryCache: {
   timestamp: number;
 } | null = {
   data: getInitialSeedMap(),
-  timestamp: Date.now() - 30000, // Seeded ready
+  timestamp: 0, // Force fresh live fetch on first call
 };
 
 /**
@@ -101,135 +111,135 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
     };
   }
 
-  try {
-    const response = await axios.get(SIH_URL, {
-      timeout: 8000,
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      },
-    });
+  let lastError: any = null;
 
-    const html = response.data;
-    const $ = cheerio.load(html);
-    const psMap = new Map<string, PSData>();
+  for (const url of SIH_URLS) {
+    try {
+      const response = await axios.get(url, {
+        httpsAgent,
+        timeout: 12000,
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+          "Accept-Language": "en-US,en;q=0.9",
+          "Cache-Control": "no-cache",
+          Pragma: "no-cache",
+        },
+      });
 
-    // Parse main problem statement table rows
-    $("table").each((_, tbl) => {
-      $(tbl)
-        .find("> tbody > tr")
-        .each((__, tr) => {
-          const tds = $(tr).children("td");
-          if (tds.length >= 6) {
-            // Direct columns in SIH2026 main table:
-            // td[0]: Serial No
-            // td[1]: Organization
-            // td[2]: Problem Statement Title (contains modal inside)
-            // td[3]: Category (Software / Hardware)
-            // td[4]: PS ID (e.g. SIH26171)
-            // td[5]: Submissions / Max (e.g. 27/500)
-            // td[6]: Theme (e.g. Smart Automation)
-            // td[7]: Deadline (e.g. 30 September 2026)
+      const html = response.data;
+      if (!html || typeof html !== "string") {
+        continue;
+      }
 
-            const org = tds.eq(1).text().replace(/\s+/g, " ").trim();
+      const $ = cheerio.load(html);
+      const psMap = new Map<string, PSData>();
 
-            // Extract Title cleanly without nested modal text
-            let title = "";
-            const titleLink = tds.eq(2).find("a").first();
-            if (titleLink.length > 0) {
-              title = titleLink.text().replace(/\s+/g, " ").trim();
-            }
-            if (!title) {
-              const clone = tds.eq(2).clone();
-              clone.find(".modal, table, .style-2, script").remove();
-              title = clone.text().replace(/\s+/g, " ").trim();
-            }
+      // Parse main problem statement table rows
+      $("table").each((_, tbl) => {
+        $(tbl)
+          .find("> tbody > tr")
+          .each((__, tr) => {
+            const tds = $(tr).children("td");
+            if (tds.length >= 6) {
+              const org = tds.eq(1).text().replace(/\s+/g, " ").trim();
 
-            const category = tds.eq(3).text().replace(/\s+/g, " ").trim() || "Software";
-            const psIdRaw = tds.eq(4).text().replace(/\s+/g, " ").trim().toUpperCase();
-            const countText = tds.eq(5).text().replace(/\s+/g, " ").trim();
-            const theme = tds.eq(6).text().replace(/\s+/g, " ").trim() || "General";
-            const deadline = tds.eq(7).text().replace(/\s+/g, " ").trim() || "30 September 2026";
+              let title = "";
+              const titleLink = tds.eq(2).find("a").first();
+              if (titleLink.length > 0) {
+                title = titleLink.text().replace(/\s+/g, " ").trim();
+              }
+              if (!title) {
+                const clone = tds.eq(2).clone();
+                clone.find(".modal, table, .style-2, script").remove();
+                title = clone.text().replace(/\s+/g, " ").trim();
+              }
 
-            let submitted = 0;
-            let maximum = 500;
-            const countMatch = countText.match(/(\d+)\s*\/\s*(\d+)/);
-            if (countMatch) {
-              submitted = parseInt(countMatch[1], 10);
-              maximum = parseInt(countMatch[2], 10);
-            }
+              const category = tds.eq(3).text().replace(/\s+/g, " ").trim() || "Software";
+              const psIdRaw = tds.eq(4).text().replace(/\s+/g, " ").trim().toUpperCase();
+              const countText = tds.eq(5).text().replace(/\s+/g, " ").trim();
+              const theme = tds.eq(6).text().replace(/\s+/g, " ").trim() || "General";
+              const deadline = tds.eq(7).text().replace(/\s+/g, " ").trim() || "30 September 2026";
 
-            if (psIdRaw.startsWith("SIH") || /^\d+$/.test(psIdRaw)) {
-              const normalizedId = normalizePsId(psIdRaw);
-              const psObj: PSData = {
-                psId: normalizedId,
-                title: title || `Problem Statement ${normalizedId}`,
-                organization: org || "SIH 2026",
-                department: org || "SIH 2026",
-                category,
-                theme,
-                submitted,
-                maximum,
-                deadline,
-                rawCountString: `${submitted}/${maximum}`,
-                lastFetched: new Date(),
-              };
+              let submitted = 0;
+              let maximum = 500;
+              const countMatch = countText.match(/(\d+)\s*\/\s*(\d+)/);
+              if (countMatch) {
+                submitted = parseInt(countMatch[1], 10);
+                maximum = parseInt(countMatch[2], 10);
+              }
 
-              psMap.set(normalizedId, psObj);
-              // Also index by raw digits without prefix for flexible lookup
-              const digitsOnly = normalizedId.replace(/\D/g, "");
-              if (digitsOnly && digitsOnly !== normalizedId) {
-                psMap.set(digitsOnly, psObj);
+              if (psIdRaw.startsWith("SIH") || /^\d+$/.test(psIdRaw)) {
+                const normalizedId = normalizePsId(psIdRaw);
+                const psObj: PSData = {
+                  psId: normalizedId,
+                  title: title || `Problem Statement ${normalizedId}`,
+                  organization: org || "SIH 2026",
+                  department: org || "SIH 2026",
+                  category,
+                  theme,
+                  submitted,
+                  maximum,
+                  deadline,
+                  rawCountString: `${submitted}/${maximum}`,
+                  lastFetched: new Date(),
+                };
+
+                psMap.set(normalizedId, psObj);
+                const digitsOnly = normalizedId.replace(/\D/g, "");
+                if (digitsOnly && digitsOnly !== normalizedId) {
+                  psMap.set(digitsOnly, psObj);
+                }
               }
             }
-          }
-        });
-    });
+          });
+      });
 
-    if (psMap.size > 0) {
-      memoryCache = {
-        data: psMap,
-        timestamp: now,
-      };
-      return {
-        psMap,
-        fromCache: false,
-        timestamp: new Date(now),
-      };
-    } else {
-      throw new Error("Could not parse any Problem Statements from SIH portal table");
+      if (psMap.size > 0) {
+        memoryCache = {
+          data: psMap,
+          timestamp: Date.now(),
+        };
+        return {
+          psMap,
+          fromCache: false,
+          timestamp: new Date(),
+        };
+      }
+    } catch (err: any) {
+      lastError = err;
+      console.error(`[SIH Scraper Error on ${url}]:`, err.message);
     }
-  } catch (err: any) {
-    console.error("[SIH Scraper Error]:", err.message);
+  }
 
-    // Return stale cache if available
-    if (memoryCache) {
-      return {
-        psMap: memoryCache.data,
-        fromCache: true,
-        timestamp: new Date(memoryCache.timestamp),
-        error: `Fetch failed (${err.message}). Using cached data.`,
-      };
-    }
-
+  // If live fetches failed, fall back to memory cache / seed data
+  if (memoryCache && memoryCache.data.size > 0) {
     return {
-      psMap: new Map(),
-      fromCache: false,
-      timestamp: new Date(),
-      error: err.message || "Failed to fetch SIH data",
+      psMap: memoryCache.data,
+      fromCache: true,
+      timestamp: new Date(memoryCache.timestamp || Date.now()),
+      error: lastError?.message || "Live fetch failed, using cached snapshot.",
     };
   }
+
+  return {
+    psMap: new Map(),
+    fromCache: false,
+    timestamp: new Date(),
+    error: lastError?.message || "Failed to fetch SIH data",
+  };
 }
 
 /**
  * Gets details for a single Problem Statement by ID.
+ * Defaults to live fetch (forceRefresh: true) to ensure real-time accuracy.
  */
-export async function getProblemStatement(psIdInput: string): Promise<PSData | null> {
+export async function getProblemStatement(psIdInput: string, forceRefresh = true): Promise<PSData | null> {
   const psId = normalizePsId(psIdInput);
   if (!psId) return null;
 
-  const result = await fetchAllProblemStatements();
+  const result = await fetchAllProblemStatements(forceRefresh);
   const data = result.psMap.get(psId) || result.psMap.get(psIdInput.trim().toUpperCase());
 
   if (data) return data;

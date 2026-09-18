@@ -6,11 +6,11 @@
     "department": "Ministry of Development of North Eastern Region (MDoNER)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 133,
+    "submitted": 157,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "133/500",
-    "lastFetched": "2026-09-17T17:42:00.670Z"
+    "rawCountString": "157/500",
+    "lastFetched": "2026-09-18T14:12:28.550Z"
   },
   {
     "psId": "SIH26002",
@@ -19,11 +19,11 @@
     "department": "Ministry of Development of North Eastern Region (MDoNER)",
     "category": "Software",
     "theme": "Transportation & Logistics",
-    "submitted": 60,
+    "submitted": 69,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "60/500",
-    "lastFetched": "2026-09-17T17:42:00.671Z"
+    "rawCountString": "69/500",
+    "lastFetched": "2026-09-18T14:12:28.554Z"
   },
   {
     "psId": "SIH26003",
@@ -32,11 +32,11 @@
     "department": "Ministry of Development of North Eastern Region (MDoNER)",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 91,
+    "submitted": 105,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "91/500",
-    "lastFetched": "2026-09-17T17:42:00.672Z"
+    "rawCountString": "105/500",
+    "lastFetched": "2026-09-18T14:12:28.555Z"
   },
   {
     "psId": "SIH26004",
@@ -45,11 +45,11 @@
     "department": "Ministry of Development of North Eastern Region (MDoNER)",
     "category": "Hardware",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 7,
+    "submitted": 11,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.672Z"
+    "rawCountString": "11/500",
+    "lastFetched": "2026-09-18T14:12:28.555Z"
   },
   {
     "psId": "SIH26005",
@@ -58,11 +58,11 @@
     "department": "Ministry of Development of North Eastern Region (MDoNER)",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 52,
+    "submitted": 61,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "52/500",
-    "lastFetched": "2026-09-17T17:42:00.672Z"
+    "rawCountString": "61/500",
+    "lastFetched": "2026-09-18T14:12:28.555Z"
   },
   {
     "psId": "SIH26006",
@@ -71,11 +71,11 @@
     "department": "Ministry of Steel",
     "category": "Software",
     "theme": "Transportation & Logistics",
-    "submitted": 22,
+    "submitted": 26,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "22/500",
-    "lastFetched": "2026-09-17T17:42:00.672Z"
+    "rawCountString": "26/500",
+    "lastFetched": "2026-09-18T14:12:28.555Z"
   },
   {
     "psId": "SIH26007",
@@ -84,11 +84,11 @@
     "department": "Ministry of Steel",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 28,
+    "submitted": 36,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "28/500",
-    "lastFetched": "2026-09-17T17:42:00.672Z"
+    "rawCountString": "36/500",
+    "lastFetched": "2026-09-18T14:12:28.556Z"
   },
   {
     "psId": "SIH26008",
@@ -97,11 +97,11 @@
     "department": "Ministry of Steel",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 16,
+    "submitted": 18,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.673Z"
+    "rawCountString": "18/500",
+    "lastFetched": "2026-09-18T14:12:28.574Z"
   },
   {
     "psId": "SIH26009",
@@ -110,11 +110,11 @@
     "department": "Ministry of Steel",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 10,
+    "submitted": 12,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.673Z"
+    "rawCountString": "12/500",
+    "lastFetched": "2026-09-18T14:12:28.575Z"
   },
   {
     "psId": "SIH26010",
@@ -127,7 +127,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.673Z"
+    "lastFetched": "2026-09-18T14:12:28.576Z"
   },
   {
     "psId": "SIH26011",
@@ -136,11 +136,11 @@
     "department": "Ministry of Rural Development",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 14,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "14/500",
-    "lastFetched": "2026-09-17T17:42:00.674Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.576Z"
   },
   {
     "psId": "SIH26012",
@@ -149,11 +149,11 @@
     "department": "Ministry of Rural Development",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 10,
+    "submitted": 11,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.674Z"
+    "rawCountString": "11/500",
+    "lastFetched": "2026-09-18T14:12:28.577Z"
   },
   {
     "psId": "SIH26013",
@@ -166,7 +166,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.674Z"
+    "lastFetched": "2026-09-18T14:12:28.577Z"
   },
   {
     "psId": "SIH26014",
@@ -179,7 +179,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.674Z"
+    "lastFetched": "2026-09-18T14:12:28.577Z"
   },
   {
     "psId": "SIH26015",
@@ -188,11 +188,11 @@
     "department": "Ministry of Rural Development",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 6,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.578Z"
   },
   {
     "psId": "SIH26016",
@@ -201,11 +201,11 @@
     "department": "Ministry of Rural Development",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 20,
+    "submitted": 23,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "rawCountString": "23/500",
+    "lastFetched": "2026-09-18T14:12:28.578Z"
   },
   {
     "psId": "SIH26017",
@@ -214,11 +214,11 @@
     "department": "Ministry of Rural Development",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 15,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.579Z"
   },
   {
     "psId": "SIH26018",
@@ -227,11 +227,11 @@
     "department": "Ministry of Rural Development",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 37,
+    "submitted": 39,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "37/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "rawCountString": "39/500",
+    "lastFetched": "2026-09-18T14:12:28.580Z"
   },
   {
     "psId": "SIH26019",
@@ -244,7 +244,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "lastFetched": "2026-09-18T14:12:28.580Z"
   },
   {
     "psId": "SIH26020",
@@ -253,11 +253,11 @@
     "department": "Ministry of MSME",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 5,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.580Z"
   },
   {
     "psId": "SIH26021",
@@ -266,11 +266,11 @@
     "department": "Ministry of MSME",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 19,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "19/500",
-    "lastFetched": "2026-09-17T17:42:00.675Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.580Z"
   },
   {
     "psId": "SIH26022",
@@ -279,11 +279,11 @@
     "department": "Ministry of MSME",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 22,
+    "submitted": 27,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "22/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "27/500",
+    "lastFetched": "2026-09-18T14:12:28.580Z"
   },
   {
     "psId": "SIH26023",
@@ -292,11 +292,11 @@
     "department": "Ministry of Coal",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 4,
+    "submitted": 6,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "6/500",
+    "lastFetched": "2026-09-18T14:12:28.580Z"
   },
   {
     "psId": "SIH26024",
@@ -305,11 +305,11 @@
     "department": "Ministry of Coal",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 15,
+    "submitted": 18,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "18/500",
+    "lastFetched": "2026-09-18T14:12:28.581Z"
   },
   {
     "psId": "SIH26025",
@@ -318,11 +318,11 @@
     "department": "Ministry of Coal",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 30,
+    "submitted": 34,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "30/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "34/500",
+    "lastFetched": "2026-09-18T14:12:28.581Z"
   },
   {
     "psId": "SIH26026",
@@ -331,11 +331,11 @@
     "department": "Ministry of Railways",
     "category": "Hardware",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 15,
+    "submitted": 16,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "16/500",
+    "lastFetched": "2026-09-18T14:12:28.581Z"
   },
   {
     "psId": "SIH26027",
@@ -344,11 +344,11 @@
     "department": "Ministry of Railways",
     "category": "Software",
     "theme": "Transportation & Logistics",
-    "submitted": 42,
+    "submitted": 47,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "42/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "47/500",
+    "lastFetched": "2026-09-18T14:12:28.581Z"
   },
   {
     "psId": "SIH26028",
@@ -357,11 +357,11 @@
     "department": "Ministry of Railways",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 27,
+    "submitted": 31,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "27/500",
-    "lastFetched": "2026-09-17T17:42:00.676Z"
+    "rawCountString": "31/500",
+    "lastFetched": "2026-09-18T14:12:28.581Z"
   },
   {
     "psId": "SIH26029",
@@ -370,11 +370,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 5,
+    "submitted": 6,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "6/500",
+    "lastFetched": "2026-09-18T14:12:28.581Z"
   },
   {
     "psId": "SIH26030",
@@ -383,11 +383,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 1,
+    "submitted": 2,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "2/500",
+    "lastFetched": "2026-09-18T14:12:28.582Z"
   },
   {
     "psId": "SIH26031",
@@ -396,11 +396,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 7,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.582Z"
   },
   {
     "psId": "SIH26032",
@@ -409,11 +409,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 99,
+    "submitted": 118,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "99/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "118/500",
+    "lastFetched": "2026-09-18T14:12:28.582Z"
   },
   {
     "psId": "SIH26033",
@@ -422,11 +422,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 97,
+    "submitted": 113,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "97/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "113/500",
+    "lastFetched": "2026-09-18T14:12:28.582Z"
   },
   {
     "psId": "SIH26034",
@@ -435,11 +435,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 105,
+    "submitted": 130,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "105/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "130/500",
+    "lastFetched": "2026-09-18T14:12:28.582Z"
   },
   {
     "psId": "SIH26035",
@@ -452,7 +452,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "lastFetched": "2026-09-18T14:12:28.582Z"
   },
   {
     "psId": "SIH26036",
@@ -461,11 +461,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 18,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.677Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.583Z"
   },
   {
     "psId": "SIH26037",
@@ -474,11 +474,11 @@
     "department": "MathWorks",
     "category": "Software",
     "theme": "Smart Vehicles",
-    "submitted": 29,
+    "submitted": 33,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "29/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "33/500",
+    "lastFetched": "2026-09-18T14:12:28.583Z"
   },
   {
     "psId": "SIH26038",
@@ -487,11 +487,11 @@
     "department": "MathWorks",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 51,
+    "submitted": 64,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "51/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "64/500",
+    "lastFetched": "2026-09-18T14:12:28.583Z"
   },
   {
     "psId": "SIH26039",
@@ -500,11 +500,11 @@
     "department": "Government of Jharkhand",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 40,
+    "submitted": 50,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "40/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "50/500",
+    "lastFetched": "2026-09-18T14:12:28.583Z"
   },
   {
     "psId": "SIH26040",
@@ -513,11 +513,11 @@
     "department": "Government of Jharkhand",
     "category": "Hardware",
     "theme": "Clean & Green Technology",
-    "submitted": 55,
+    "submitted": 62,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "55/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "62/500",
+    "lastFetched": "2026-09-18T14:12:28.584Z"
   },
   {
     "psId": "SIH26041",
@@ -526,11 +526,11 @@
     "department": "Government of Jharkhand",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.584Z"
   },
   {
     "psId": "SIH26042",
@@ -539,11 +539,11 @@
     "department": "Government of Jharkhand",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 41,
+    "submitted": 47,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "41/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "47/500",
+    "lastFetched": "2026-09-18T14:12:28.584Z"
   },
   {
     "psId": "SIH26043",
@@ -552,11 +552,11 @@
     "department": "Government of Jharkhand",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 56,
+    "submitted": 64,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "56/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "64/500",
+    "lastFetched": "2026-09-18T14:12:28.585Z"
   },
   {
     "psId": "SIH26044",
@@ -565,11 +565,11 @@
     "department": "Ministry of Ayush",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 88,
+    "submitted": 104,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "88/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "104/500",
+    "lastFetched": "2026-09-18T14:12:28.585Z"
   },
   {
     "psId": "SIH26045",
@@ -578,11 +578,11 @@
     "department": "Ministry of Ayush",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 22,
+    "submitted": 24,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "22/500",
-    "lastFetched": "2026-09-17T17:42:00.678Z"
+    "rawCountString": "24/500",
+    "lastFetched": "2026-09-18T14:12:28.585Z"
   },
   {
     "psId": "SIH26046",
@@ -591,11 +591,11 @@
     "department": "Ministry of Ayush",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.586Z"
   },
   {
     "psId": "SIH26047",
@@ -604,11 +604,11 @@
     "department": "Ministry of Ayush",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 163,
+    "submitted": 184,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "163/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "184/500",
+    "lastFetched": "2026-09-18T14:12:28.586Z"
   },
   {
     "psId": "SIH26048",
@@ -617,11 +617,11 @@
     "department": "Ministry of Ayush",
     "category": "Hardware",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 2,
+    "submitted": 3,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "2/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "3/500",
+    "lastFetched": "2026-09-18T14:12:28.586Z"
   },
   {
     "psId": "SIH26049",
@@ -630,11 +630,11 @@
     "department": "DRDO",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 9,
+    "submitted": 10,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "10/500",
+    "lastFetched": "2026-09-18T14:12:28.586Z"
   },
   {
     "psId": "SIH26050",
@@ -643,11 +643,11 @@
     "department": "DRDO",
     "category": "Hardware",
     "theme": "Robotics and Drones",
-    "submitted": 18,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.586Z"
   },
   {
     "psId": "SIH26051",
@@ -656,11 +656,11 @@
     "department": "DRDO",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 16,
+    "submitted": 17,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "17/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26052",
@@ -669,11 +669,11 @@
     "department": "DRDO",
     "category": "Hardware",
     "theme": "Miscellaneous",
-    "submitted": 19,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "19/500",
-    "lastFetched": "2026-09-17T17:42:00.679Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26053",
@@ -682,11 +682,11 @@
     "department": "DRDO",
     "category": "Software",
     "theme": "Smart Vehicles",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26054",
@@ -695,11 +695,11 @@
     "department": "DRDO",
     "category": "Software",
     "theme": "Robotics and Drones",
-    "submitted": 25,
+    "submitted": 28,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "25/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "28/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26055",
@@ -712,7 +712,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26056",
@@ -721,11 +721,11 @@
     "department": "MoSPI",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 14,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "14/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26057",
@@ -734,11 +734,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 15,
+    "submitted": 17,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "17/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26058",
@@ -747,11 +747,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Hardware",
     "theme": "Robotics and Drones",
-    "submitted": 6,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26059",
@@ -764,7 +764,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "lastFetched": "2026-09-18T14:12:28.587Z"
   },
   {
     "psId": "SIH26060",
@@ -777,7 +777,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26061",
@@ -786,11 +786,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Clean & Green Technology",
-    "submitted": 14,
+    "submitted": 17,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "14/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "17/500",
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26062",
@@ -799,11 +799,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 0,
+    "submitted": 1,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "0/500",
-    "lastFetched": "2026-09-17T17:42:00.680Z"
+    "rawCountString": "1/500",
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26063",
@@ -816,7 +816,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26064",
@@ -825,11 +825,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Hardware",
     "theme": "Robotics and Drones",
-    "submitted": 5,
+    "submitted": 6,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "6/500",
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26065",
@@ -842,7 +842,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26066",
@@ -851,11 +851,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 15,
+    "submitted": 16,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "16/500",
+    "lastFetched": "2026-09-18T14:12:28.588Z"
   },
   {
     "psId": "SIH26067",
@@ -864,11 +864,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 9,
+    "submitted": 12,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "12/500",
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26068",
@@ -877,11 +877,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 68,
+    "submitted": 74,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "68/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "74/500",
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26069",
@@ -890,11 +890,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 4,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26070",
@@ -903,11 +903,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 15,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26071",
@@ -916,11 +916,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 16,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26072",
@@ -933,7 +933,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "2/500",
-    "lastFetched": "2026-09-17T17:42:00.681Z"
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26073",
@@ -946,7 +946,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.682Z"
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26074",
@@ -959,7 +959,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "3/500",
-    "lastFetched": "2026-09-17T17:42:00.682Z"
+    "lastFetched": "2026-09-18T14:12:28.589Z"
   },
   {
     "psId": "SIH26075",
@@ -968,11 +968,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 21,
+    "submitted": 24,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "21/500",
-    "lastFetched": "2026-09-17T17:42:00.682Z"
+    "rawCountString": "24/500",
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26076",
@@ -981,11 +981,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 15,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.682Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26077",
@@ -994,11 +994,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 1,
+    "submitted": 4,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.682Z"
+    "rawCountString": "4/500",
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26078",
@@ -1011,7 +1011,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "0/500",
-    "lastFetched": "2026-09-17T17:42:00.683Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26079",
@@ -1024,7 +1024,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "0/500",
-    "lastFetched": "2026-09-17T17:42:00.683Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26080",
@@ -1037,7 +1037,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "0/500",
-    "lastFetched": "2026-09-17T17:42:00.683Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26081",
@@ -1050,7 +1050,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.684Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26082",
@@ -1059,11 +1059,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Clean & Green Technology",
-    "submitted": 12,
+    "submitted": 17,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.684Z"
+    "rawCountString": "17/500",
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26083",
@@ -1072,11 +1072,11 @@
     "department": "Ministry of Earth Sciences (MoES)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 20,
+    "submitted": 26,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.684Z"
+    "rawCountString": "26/500",
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26084",
@@ -1089,7 +1089,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.684Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26085",
@@ -1102,7 +1102,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "23/500",
-    "lastFetched": "2026-09-17T17:42:00.684Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26086",
@@ -1115,7 +1115,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.684Z"
+    "lastFetched": "2026-09-18T14:12:28.590Z"
   },
   {
     "psId": "SIH26087",
@@ -1124,11 +1124,11 @@
     "department": "Ministry of Cooperation",
     "category": "Hardware",
     "theme": "Smart Education",
-    "submitted": 5,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26088",
@@ -1141,7 +1141,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26089",
@@ -1150,11 +1150,11 @@
     "department": "Ministry of Cooperation",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 69,
+    "submitted": 74,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "69/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "74/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26090",
@@ -1163,11 +1163,11 @@
     "department": "Ministry of Social Justice and Empowerment (MoSJE)",
     "category": "Software",
     "theme": "Heritage & Culture",
-    "submitted": 72,
+    "submitted": 81,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "72/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "81/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26091",
@@ -1176,11 +1176,11 @@
     "department": "Ministry of Social Justice and Empowerment (MoSJE)",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 44,
+    "submitted": 49,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "44/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "49/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26092",
@@ -1189,11 +1189,11 @@
     "department": "Ministry of Social Justice and Empowerment (MoSJE)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 49,
+    "submitted": 51,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "49/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "51/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26093",
@@ -1202,11 +1202,11 @@
     "department": "Ministry of Social Justice and Empowerment (MoSJE)",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 22,
+    "submitted": 23,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "22/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "23/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26094",
@@ -1215,11 +1215,11 @@
     "department": "Ministry of Social Justice and Empowerment (MoSJE)",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 20,
+    "submitted": 24,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "24/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26095",
@@ -1228,11 +1228,11 @@
     "department": "Ministry of Social Justice and Empowerment (MoSJE)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 33,
+    "submitted": 36,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "33/500",
-    "lastFetched": "2026-09-17T17:42:00.685Z"
+    "rawCountString": "36/500",
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26096",
@@ -1245,7 +1245,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26097",
@@ -1258,7 +1258,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26098",
@@ -1271,7 +1271,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "lastFetched": "2026-09-18T14:12:28.591Z"
   },
   {
     "psId": "SIH26099",
@@ -1280,11 +1280,11 @@
     "department": "Ministry of Petroleum & Natural Gas",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 7,
+    "submitted": 10,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "rawCountString": "10/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26100",
@@ -1293,11 +1293,11 @@
     "department": "Ministry of Petroleum & Natural Gas",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 25,
+    "submitted": 29,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "25/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "rawCountString": "29/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26101",
@@ -1306,11 +1306,11 @@
     "department": "MoSPI",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 69,
+    "submitted": 75,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "69/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "rawCountString": "75/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26102",
@@ -1319,11 +1319,11 @@
     "department": "MoSPI",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 42,
+    "submitted": 48,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "42/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "rawCountString": "48/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26103",
@@ -1332,11 +1332,11 @@
     "department": "MoSPI",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 24,
+    "submitted": 30,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "24/500",
-    "lastFetched": "2026-09-17T17:42:00.686Z"
+    "rawCountString": "30/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26104",
@@ -1345,11 +1345,11 @@
     "department": "All India Council for Technical Education (Cyber Security Cell)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 96,
+    "submitted": 106,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "96/500",
-    "lastFetched": "2026-09-17T17:42:00.704Z"
+    "rawCountString": "106/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26105",
@@ -1362,7 +1362,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.704Z"
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26106",
@@ -1371,11 +1371,11 @@
     "department": "All India Council for Technical Education (Cyber Security Cell)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 63,
+    "submitted": 73,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "63/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "73/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26107",
@@ -1384,11 +1384,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 15,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26108",
@@ -1397,11 +1397,11 @@
     "department": "Ministry of Consumer Affairs, Food & Public Distribution",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 4,
+    "submitted": 5,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "5/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26109",
@@ -1414,7 +1414,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26110",
@@ -1423,11 +1423,11 @@
     "department": "Ministry of Fisheries, Animal Husbandry & Dairying",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 35,
+    "submitted": 40,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "35/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "40/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26111",
@@ -1436,11 +1436,11 @@
     "department": "Ministry of Fisheries, Animal Husbandry & Dairying",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 9,
+    "submitted": 12,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "12/500",
+    "lastFetched": "2026-09-18T14:12:28.592Z"
   },
   {
     "psId": "SIH26112",
@@ -1449,11 +1449,11 @@
     "department": "Autodesk",
     "category": "Hardware",
     "theme": "Robotics and Drones",
-    "submitted": 7,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.593Z"
   },
   {
     "psId": "SIH26113",
@@ -1462,11 +1462,11 @@
     "department": "Autodesk",
     "category": "Hardware",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 21,
+    "submitted": 24,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "21/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "24/500",
+    "lastFetched": "2026-09-18T14:12:28.593Z"
   },
   {
     "psId": "SIH26114",
@@ -1479,7 +1479,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "0/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "lastFetched": "2026-09-18T14:12:28.593Z"
   },
   {
     "psId": "SIH26115",
@@ -1488,11 +1488,11 @@
     "department": "Autodesk",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 15,
+    "submitted": 17,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "15/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "17/500",
+    "lastFetched": "2026-09-18T14:12:28.593Z"
   },
   {
     "psId": "SIH26116",
@@ -1505,7 +1505,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "lastFetched": "2026-09-18T14:12:28.593Z"
   },
   {
     "psId": "SIH26117",
@@ -1514,11 +1514,11 @@
     "department": "Mangalore Refinery and Petrochemicals Limited (MRPL)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 48,
+    "submitted": 53,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "48/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "53/500",
+    "lastFetched": "2026-09-18T14:12:28.593Z"
   },
   {
     "psId": "SIH26118",
@@ -1527,11 +1527,11 @@
     "department": "Mangalore Refinery and Petrochemicals Limited (MRPL)",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 6,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26119",
@@ -1540,11 +1540,11 @@
     "department": "Mangalore Refinery and Petrochemicals Limited (MRPL)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 5,
+    "submitted": 6,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.705Z"
+    "rawCountString": "6/500",
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26120",
@@ -1557,7 +1557,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "5/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26121",
@@ -1570,7 +1570,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26122",
@@ -1579,11 +1579,11 @@
     "department": "Oil India Limited",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 14,
+    "submitted": 16,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "14/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "16/500",
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26123",
@@ -1596,7 +1596,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26124",
@@ -1605,11 +1605,11 @@
     "department": "Bharat Electronics Limited",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 24,
+    "submitted": 27,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "24/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "27/500",
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26125",
@@ -1618,11 +1618,11 @@
     "department": "Bharat Electronics Limited",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 24,
+    "submitted": 26,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "24/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "26/500",
+    "lastFetched": "2026-09-18T14:12:28.594Z"
   },
   {
     "psId": "SIH26126",
@@ -1631,11 +1631,11 @@
     "department": "Bharat Electronics Limited",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 13,
+    "submitted": 14,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "13/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "14/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26127",
@@ -1644,11 +1644,11 @@
     "department": "Bharat Electronics Limited",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 26,
+    "submitted": 33,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "26/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "33/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26128",
@@ -1657,11 +1657,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 19,
+    "submitted": 23,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "19/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "23/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26129",
@@ -1670,11 +1670,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 29,
+    "submitted": 31,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "29/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "31/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26130",
@@ -1683,11 +1683,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 13,
+    "submitted": 16,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "13/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "16/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26131",
@@ -1696,11 +1696,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 99,
+    "submitted": 110,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "99/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "110/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26132",
@@ -1709,11 +1709,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 76,
+    "submitted": 89,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "76/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "89/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26133",
@@ -1722,11 +1722,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 82,
+    "submitted": 90,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "82/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "90/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26134",
@@ -1735,11 +1735,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 25,
+    "submitted": 42,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "25/500",
-    "lastFetched": "2026-09-17T17:42:00.706Z"
+    "rawCountString": "42/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26135",
@@ -1748,11 +1748,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 18,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26136",
@@ -1761,11 +1761,11 @@
     "department": "Government Of Maharashtra",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 18,
+    "submitted": 23,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "23/500",
+    "lastFetched": "2026-09-18T14:12:28.595Z"
   },
   {
     "psId": "SIH26137",
@@ -1774,11 +1774,11 @@
     "department": "Egreen Quanta",
     "category": "Software",
     "theme": "Transportation & Logistics",
-    "submitted": 13,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "13/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.596Z"
   },
   {
     "psId": "SIH26138",
@@ -1787,11 +1787,11 @@
     "department": "Egreen Quanta",
     "category": "Software",
     "theme": "Clean & Green Technology",
-    "submitted": 7,
+    "submitted": 8,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "8/500",
+    "lastFetched": "2026-09-18T14:12:28.596Z"
   },
   {
     "psId": "SIH26139",
@@ -1800,11 +1800,11 @@
     "department": "Egreen Quanta",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 18,
+    "submitted": 22,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "22/500",
+    "lastFetched": "2026-09-18T14:12:28.596Z"
   },
   {
     "psId": "SIH26140",
@@ -1813,11 +1813,11 @@
     "department": "Egreen Quanta",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.596Z"
   },
   {
     "psId": "SIH26141",
@@ -1826,11 +1826,11 @@
     "department": "Egreen Quanta",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 6,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.596Z"
   },
   {
     "psId": "SIH26142",
@@ -1839,11 +1839,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 10,
+    "submitted": 11,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "11/500",
+    "lastFetched": "2026-09-18T14:12:28.596Z"
   },
   {
     "psId": "SIH26143",
@@ -1852,11 +1852,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 42,
+    "submitted": 45,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "42/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "45/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26144",
@@ -1869,7 +1869,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "2/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26145",
@@ -1878,11 +1878,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 26,
+    "submitted": 27,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "26/500",
-    "lastFetched": "2026-09-17T17:42:00.707Z"
+    "rawCountString": "27/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26146",
@@ -1895,7 +1895,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26147",
@@ -1904,11 +1904,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 4,
+    "submitted": 5,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "5/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26148",
@@ -1921,7 +1921,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "2/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26149",
@@ -1930,11 +1930,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 13,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "13/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26150",
@@ -1943,11 +1943,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26151",
@@ -1960,7 +1960,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26152",
@@ -1969,11 +1969,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 18,
+    "submitted": 20,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "18/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "20/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26153",
@@ -1982,11 +1982,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 17,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "17/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26154",
@@ -1995,11 +1995,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 19,
+    "submitted": 22,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "19/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "22/500",
+    "lastFetched": "2026-09-18T14:12:28.597Z"
   },
   {
     "psId": "SIH26155",
@@ -2008,11 +2008,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26156",
@@ -2021,11 +2021,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 9,
+    "submitted": 10,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "10/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26157",
@@ -2038,7 +2038,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26158",
@@ -2047,11 +2047,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Robotics and Drones",
-    "submitted": 11,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "11/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26159",
@@ -2064,7 +2064,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "3/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26160",
@@ -2077,7 +2077,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "3/500",
-    "lastFetched": "2026-09-17T17:42:00.708Z"
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26161",
@@ -2086,11 +2086,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 6,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26162",
@@ -2099,11 +2099,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 16,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26163",
@@ -2116,7 +2116,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "3/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26164",
@@ -2125,11 +2125,11 @@
     "department": "National Technical Research Organisation (NTRO)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 8,
+    "submitted": 11,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "11/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26165",
@@ -2138,11 +2138,11 @@
     "department": "Oil India Limited",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 16,
+    "submitted": 17,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "17/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26166",
@@ -2151,11 +2151,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 28,
+    "submitted": 29,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "28/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "29/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26167",
@@ -2164,11 +2164,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 49,
+    "submitted": 56,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "49/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "56/500",
+    "lastFetched": "2026-09-18T14:12:28.598Z"
   },
   {
     "psId": "SIH26168",
@@ -2177,11 +2177,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Smart Vehicles",
-    "submitted": 20,
+    "submitted": 24,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "24/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26169",
@@ -2190,11 +2190,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26170",
@@ -2203,11 +2203,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26171",
@@ -2216,11 +2216,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 27,
+    "submitted": 29,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "27/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "29/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26172",
@@ -2229,11 +2229,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 12,
+    "submitted": 14,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "14/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26173",
@@ -2242,11 +2242,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 8,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26174",
@@ -2255,11 +2255,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 11,
+    "submitted": 13,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "11/500",
-    "lastFetched": "2026-09-17T17:42:00.709Z"
+    "rawCountString": "13/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26175",
@@ -2268,11 +2268,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 9,
+    "submitted": 14,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "14/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26176",
@@ -2281,11 +2281,11 @@
     "department": "Indian Space Research Organisation(ISRO)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 22,
+    "submitted": 26,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "22/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "26/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26177",
@@ -2294,11 +2294,11 @@
     "department": "Qualcomm Inc",
     "category": "Hardware",
     "theme": "Robotics and Drones",
-    "submitted": 41,
+    "submitted": 48,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "41/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "48/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26178",
@@ -2307,11 +2307,11 @@
     "department": "Qualcomm Inc",
     "category": "Hardware",
     "theme": "Disaster Management",
-    "submitted": 38,
+    "submitted": 40,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "38/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "40/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26179",
@@ -2320,11 +2320,11 @@
     "department": "Qualcomm Inc",
     "category": "Hardware",
     "theme": "Miscellaneous",
-    "submitted": 12,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26180",
@@ -2333,11 +2333,11 @@
     "department": "Qualcomm Inc",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 47,
+    "submitted": 58,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "47/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "58/500",
+    "lastFetched": "2026-09-18T14:12:28.599Z"
   },
   {
     "psId": "SIH26181",
@@ -2346,11 +2346,11 @@
     "department": "Qualcomm Inc",
     "category": "Hardware",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 36,
+    "submitted": 39,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "36/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "39/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26182",
@@ -2359,11 +2359,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 10,
+    "submitted": 11,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "11/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26183",
@@ -2372,11 +2372,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 13,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "13/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26184",
@@ -2385,11 +2385,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 19,
+    "submitted": 22,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "19/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "22/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26185",
@@ -2402,7 +2402,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26186",
@@ -2411,11 +2411,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 20,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26187",
@@ -2424,11 +2424,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 50,
+    "submitted": 63,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "50/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "63/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26188",
@@ -2437,11 +2437,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 73,
+    "submitted": 89,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "73/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "89/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26189",
@@ -2450,11 +2450,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 70,
+    "submitted": 80,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "70/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "80/500",
+    "lastFetched": "2026-09-18T14:12:28.600Z"
   },
   {
     "psId": "SIH26190",
@@ -2463,11 +2463,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 32,
+    "submitted": 38,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "32/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "38/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26191",
@@ -2476,11 +2476,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 23,
+    "submitted": 25,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "23/500",
-    "lastFetched": "2026-09-17T17:42:00.710Z"
+    "rawCountString": "25/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26192",
@@ -2489,11 +2489,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 20,
+    "submitted": 26,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "26/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26193",
@@ -2502,11 +2502,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 53,
+    "submitted": 65,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "53/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "65/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26194",
@@ -2515,11 +2515,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 16,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26195",
@@ -2528,11 +2528,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Clean & Green Technology",
-    "submitted": 33,
+    "submitted": 42,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "33/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "42/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26196",
@@ -2541,11 +2541,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Fitness & Sports",
-    "submitted": 30,
+    "submitted": 34,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "30/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "34/500",
+    "lastFetched": "2026-09-18T14:12:28.601Z"
   },
   {
     "psId": "SIH26197",
@@ -2554,11 +2554,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Heritage & Culture",
-    "submitted": 39,
+    "submitted": 51,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "39/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "51/500",
+    "lastFetched": "2026-09-18T14:12:28.602Z"
   },
   {
     "psId": "SIH26198",
@@ -2567,11 +2567,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 86,
+    "submitted": 96,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "86/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "96/500",
+    "lastFetched": "2026-09-18T14:12:28.602Z"
   },
   {
     "psId": "SIH26199",
@@ -2580,11 +2580,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Miscellaneous",
-    "submitted": 43,
+    "submitted": 49,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "43/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "49/500",
+    "lastFetched": "2026-09-18T14:12:28.602Z"
   },
   {
     "psId": "SIH26200",
@@ -2593,11 +2593,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Renewable / Sustainable Energy",
-    "submitted": 20,
+    "submitted": 22,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "20/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "22/500",
+    "lastFetched": "2026-09-18T14:12:28.602Z"
   },
   {
     "psId": "SIH26201",
@@ -2606,11 +2606,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Robotics and Drones",
-    "submitted": 8,
+    "submitted": 10,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "10/500",
+    "lastFetched": "2026-09-18T14:12:28.602Z"
   },
   {
     "psId": "SIH26202",
@@ -2619,11 +2619,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Smart Automation",
-    "submitted": 62,
+    "submitted": 67,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "62/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "67/500",
+    "lastFetched": "2026-09-18T14:12:28.602Z"
   },
   {
     "psId": "SIH26203",
@@ -2632,11 +2632,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Smart Vehicles",
-    "submitted": 12,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26204",
@@ -2645,11 +2645,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Travel & Tourism",
-    "submitted": 94,
+    "submitted": 103,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "94/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "103/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26205",
@@ -2658,11 +2658,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Transportation & Logistics",
-    "submitted": 49,
+    "submitted": 60,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "49/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "60/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26206",
@@ -2671,11 +2671,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Disaster Management",
-    "submitted": 61,
+    "submitted": 65,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "61/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "65/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26207",
@@ -2684,11 +2684,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 90,
+    "submitted": 108,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "90/500",
-    "lastFetched": "2026-09-17T17:42:00.711Z"
+    "rawCountString": "108/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26208",
@@ -2697,11 +2697,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Toys & Games",
-    "submitted": 25,
+    "submitted": 29,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "25/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "29/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26209",
@@ -2710,11 +2710,11 @@
     "department": "AICTE",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 16,
+    "submitted": 19,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "19/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26210",
@@ -2723,11 +2723,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 45,
+    "submitted": 57,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "45/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "57/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26211",
@@ -2740,7 +2740,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26212",
@@ -2749,11 +2749,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Clean & Green Technology",
-    "submitted": 46,
+    "submitted": 57,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "46/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "57/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26213",
@@ -2762,11 +2762,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Fitness & Sports",
-    "submitted": 6,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26214",
@@ -2775,11 +2775,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Heritage & Culture",
-    "submitted": 4,
+    "submitted": 5,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "5/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26215",
@@ -2788,11 +2788,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 50,
+    "submitted": 56,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "50/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "56/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26216",
@@ -2801,11 +2801,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Miscellaneous",
-    "submitted": 14,
+    "submitted": 15,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "14/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "15/500",
+    "lastFetched": "2026-09-18T14:12:28.603Z"
   },
   {
     "psId": "SIH26217",
@@ -2814,11 +2814,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Renewable / Sustainable Energy",
-    "submitted": 72,
+    "submitted": 77,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "72/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "77/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26218",
@@ -2827,11 +2827,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Robotics and Drones",
-    "submitted": 19,
+    "submitted": 21,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "19/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "21/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26219",
@@ -2840,11 +2840,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Smart Automation",
-    "submitted": 33,
+    "submitted": 37,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "33/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "37/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26220",
@@ -2853,11 +2853,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Smart Vehicles",
-    "submitted": 35,
+    "submitted": 40,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "35/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "40/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26221",
@@ -2866,11 +2866,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Travel & Tourism",
-    "submitted": 6,
+    "submitted": 8,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "8/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26222",
@@ -2879,11 +2879,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Transportation & Logistics",
-    "submitted": 17,
+    "submitted": 20,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "17/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "20/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26223",
@@ -2892,11 +2892,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Disaster Management",
-    "submitted": 45,
+    "submitted": 53,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "45/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "53/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26224",
@@ -2905,11 +2905,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Smart Education",
-    "submitted": 10,
+    "submitted": 13,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "13/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26225",
@@ -2922,7 +2922,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26226",
@@ -2931,11 +2931,11 @@
     "department": "AICTE",
     "category": "Hardware",
     "theme": "Space Technology",
-    "submitted": 11,
+    "submitted": 14,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "11/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "14/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26227",
@@ -2944,11 +2944,11 @@
     "department": "Ministry of defence (MoD)",
     "category": "Software",
     "theme": "Space Technology",
-    "submitted": 12,
+    "submitted": 13,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "12/500",
-    "lastFetched": "2026-09-17T17:42:00.712Z"
+    "rawCountString": "13/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26228",
@@ -2957,11 +2957,11 @@
     "department": "Ministry of defence (MoD)",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 9,
+    "submitted": 10,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "9/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "10/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26229",
@@ -2970,11 +2970,11 @@
     "department": "Ministry of Mines (MoM)",
     "category": "Software",
     "theme": "Clean & Green Technology",
-    "submitted": 16,
+    "submitted": 20,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "16/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "20/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26230",
@@ -2983,11 +2983,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Hardware",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 26,
+    "submitted": 29,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "26/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "29/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26231",
@@ -2996,11 +2996,11 @@
     "department": "Ministry of Home Affairs",
     "category": "Software",
     "theme": "MedTech / BioTech / HealthTech",
-    "submitted": 10,
+    "submitted": 11,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "10/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "11/500",
+    "lastFetched": "2026-09-18T14:12:28.604Z"
   },
   {
     "psId": "SIH26232",
@@ -3013,7 +3013,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "3/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26233",
@@ -3026,7 +3026,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "1/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26234",
@@ -3039,7 +3039,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "11/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26235",
@@ -3048,11 +3048,11 @@
     "department": "Ministry of Food Processing Industries (MoFPI)",
     "category": "Hardware",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 4,
+    "submitted": 5,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "5/500",
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26236",
@@ -3065,7 +3065,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "8/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26237",
@@ -3074,11 +3074,11 @@
     "department": "Ministry of Defence",
     "category": "Software",
     "theme": "Blockchain & Cybersecurity",
-    "submitted": 6,
+    "submitted": 7,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "7/500",
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26238",
@@ -3091,7 +3091,7 @@
     "maximum": 500,
     "deadline": "30 September 2026",
     "rawCountString": "6/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26239",
@@ -3100,11 +3100,11 @@
     "department": "Ministry of Tribal Affairs",
     "category": "Software",
     "theme": "Smart Education",
-    "submitted": 4,
+    "submitted": 5,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "4/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "5/500",
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   },
   {
     "psId": "SIH26240",
@@ -3113,10 +3113,10 @@
     "department": "Ministry of Tribal Affairs",
     "category": "Software",
     "theme": "Agriculture, FoodTech & Rural Development",
-    "submitted": 7,
+    "submitted": 9,
     "maximum": 500,
     "deadline": "30 September 2026",
-    "rawCountString": "7/500",
-    "lastFetched": "2026-09-17T17:42:00.713Z"
+    "rawCountString": "9/500",
+    "lastFetched": "2026-09-18T14:12:28.605Z"
   }
 ]
