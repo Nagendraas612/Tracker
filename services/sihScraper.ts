@@ -24,18 +24,28 @@ let memoryCache: {
 } | null = null;
 
 /**
- * Normalizes a Problem Statement ID to uppercase format e.g. "sih26171" -> "SIH26171"
+ * Normalizes a Problem Statement ID e.g. "sih26171" -> "SIH26171", "26171" -> "SIH26171"
  */
 export function normalizePsId(input: string): string {
   if (!input) return "";
-  return input.trim().toUpperCase();
+  let trimmed = input.trim().toUpperCase();
+  if (/^\d{3,5}$/.test(trimmed)) {
+    if (trimmed.startsWith("26")) {
+      trimmed = `SIH${trimmed}`;
+    } else {
+      trimmed = `SIH26${trimmed.padStart(3, "0")}`;
+    }
+  }
+  return trimmed;
 }
 
 /**
- * Validates PS ID format e.g. SIH26171 or SIH26001
+ * Validates PS ID format e.g. SIH26171, SIH26001, or 26171
  */
 export function isValidPsIdFormat(psId: string): boolean {
-  return /^SIH26\d{3,5}$/i.test(psId.trim());
+  if (!psId) return false;
+  const normalized = normalizePsId(psId);
+  return /^SIH(26)?\d{3,5}$/i.test(normalized);
 }
 
 /**
@@ -73,88 +83,76 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
     const $ = cheerio.load(html);
     const psMap = new Map<string, PSData>();
 
-    // Parse table rows
-    $("table tr").each((_, tr) => {
-      const tds = $(tr).find("td");
-      if (tds.length < 3) return;
+    // Parse main problem statement table rows
+    $("table").each((_, tbl) => {
+      $(tbl)
+        .find("> tbody > tr")
+        .each((__, tr) => {
+          const tds = $(tr).children("td");
+          if (tds.length >= 6) {
+            // Direct columns in SIH2026 main table:
+            // td[0]: Serial No
+            // td[1]: Organization
+            // td[2]: Problem Statement Title (contains modal inside)
+            // td[3]: Category (Software / Hardware)
+            // td[4]: PS ID (e.g. SIH26171)
+            // td[5]: Submissions / Max (e.g. 27/500)
+            // td[6]: Theme (e.g. Smart Automation)
+            // td[7]: Deadline (e.g. 30 September 2026)
 
-      let rowText = "";
-      const cellValues: string[] = [];
+            const org = tds.eq(1).text().replace(/\s+/g, " ").trim();
 
-      tds.each((__, td) => {
-        const text = $(td).text().trim();
-        cellValues.push(text);
-        rowText += " " + text;
-      });
+            // Extract Title cleanly without nested modal text
+            let title = "";
+            const titleLink = tds.eq(2).find("a").first();
+            if (titleLink.length > 0) {
+              title = titleLink.text().replace(/\s+/g, " ").trim();
+            }
+            if (!title) {
+              const clone = tds.eq(2).clone();
+              clone.find(".modal, table, .style-2, script").remove();
+              title = clone.text().replace(/\s+/g, " ").trim();
+            }
 
-      // Find PS ID matching pattern e.g. SIH26171
-      const psMatch = rowText.match(/\b(SIH26\d{3,5})\b/i);
-      if (!psMatch) return;
+            const category = tds.eq(3).text().replace(/\s+/g, " ").trim() || "Software";
+            const psIdRaw = tds.eq(4).text().replace(/\s+/g, " ").trim().toUpperCase();
+            const countText = tds.eq(5).text().replace(/\s+/g, " ").trim();
+            const theme = tds.eq(6).text().replace(/\s+/g, " ").trim() || "General";
+            const deadline = tds.eq(7).text().replace(/\s+/g, " ").trim() || "30 September 2026";
 
-      const psId = psMatch[1].toUpperCase();
+            let submitted = 0;
+            let maximum = 500;
+            const countMatch = countText.match(/(\d+)\s*\/\s*(\d+)/);
+            if (countMatch) {
+              submitted = parseInt(countMatch[1], 10);
+              maximum = parseInt(countMatch[2], 10);
+            }
 
-      // Find cell with "submitted/maximum" format e.g. "26/500"
-      let submitted = 0;
-      let maximum = 500;
-      let rawCountString = "0/500";
+            if (psIdRaw.startsWith("SIH") || /^\d+$/.test(psIdRaw)) {
+              const normalizedId = normalizePsId(psIdRaw);
+              const psObj: PSData = {
+                psId: normalizedId,
+                title: title || `Problem Statement ${normalizedId}`,
+                organization: org || "SIH 2026",
+                department: org || "SIH 2026",
+                category,
+                theme,
+                submitted,
+                maximum,
+                deadline,
+                rawCountString: `${submitted}/${maximum}`,
+                lastFetched: new Date(),
+              };
 
-      for (const cell of cellValues) {
-        const countMatch = cell.match(/^(\d+)\s*\/\s*(\d+)$/);
-        if (countMatch) {
-          submitted = parseInt(countMatch[1], 10);
-          maximum = parseInt(countMatch[2], 10);
-          rawCountString = `${submitted}/${maximum}`;
-          break;
-        }
-      }
-
-      // Extract details from row cells
-      // Typically: [Index, Org, Title, Category, PS_ID, Submitted/Max, Theme, Deadline]
-      let organization = "SIH 2026";
-      let title = `Problem Statement ${psId}`;
-      let category = "Software";
-      let theme = "General";
-      let deadline = "30 September 2026";
-
-      // Attempt to refine fields from cells
-      cellValues.forEach((val) => {
-        if (val.toLowerCase().includes("hardware")) category = "Hardware";
-        if (val.toLowerCase().includes("software")) category = "Software";
-        if (/\d{1,2}\s+[A-Za-z]+\s+202\d/.test(val)) deadline = val;
-      });
-
-      // Org is usually early in the row if cell contains company/ministry
-      if (cellValues[1] && cellValues[1].length > 2 && !cellValues[1].match(/^\d+$/)) {
-        organization = cellValues[1];
-      }
-
-      // Title usually inside cell 2 or modal link
-      const titleLink = $(tr).find("a[data-toggle='modal'], a.ps-title").first();
-      if (titleLink.length > 0) {
-        title = titleLink.text().trim() || title;
-      } else if (cellValues[2] && cellValues[2].length > 5) {
-        title = cellValues[2].replace(/\s+/g, " ");
-      }
-
-      // Theme is usually after count
-      const countIdx = cellValues.findIndex((c) => /^\d+\/\d+$/.test(c));
-      if (countIdx !== -1 && cellValues[countIdx + 1]) {
-        theme = cellValues[countIdx + 1];
-      }
-
-      psMap.set(psId, {
-        psId,
-        title,
-        organization,
-        department: organization,
-        category,
-        theme,
-        submitted,
-        maximum,
-        deadline,
-        rawCountString,
-        lastFetched: new Date(),
-      });
+              psMap.set(normalizedId, psObj);
+              // Also index by raw digits without prefix for flexible lookup
+              const digitsOnly = normalizedId.replace(/\D/g, "");
+              if (digitsOnly && digitsOnly !== normalizedId) {
+                psMap.set(digitsOnly, psObj);
+              }
+            }
+          }
+        });
     });
 
     if (psMap.size > 0) {
@@ -168,8 +166,7 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
         timestamp: new Date(now),
       };
     } else {
-      // Fallback if table parsing returned empty
-      throw new Error("Could not parse any Problem Statements from SIH HTML table");
+      throw new Error("Could not parse any Problem Statements from SIH portal table");
     }
   } catch (err: any) {
     console.error("[SIH Scraper Error]:", err.message);
@@ -201,11 +198,18 @@ export async function getProblemStatement(psIdInput: string): Promise<PSData | n
   if (!psId) return null;
 
   const result = await fetchAllProblemStatements();
-  const data = result.psMap.get(psId);
+  const data = result.psMap.get(psId) || result.psMap.get(psIdInput.trim().toUpperCase());
 
   if (data) return data;
 
-  // Fallback demo mode check if requested
+  // Search case-insensitively across keys
+  for (const [key, val] of result.psMap.entries()) {
+    if (key.toUpperCase() === psId || key.toUpperCase() === psIdInput.trim().toUpperCase()) {
+      return val;
+    }
+  }
+
+  // Fallback demo mode only if explicitly enabled
   if (process.env.DEMO_MODE === "true") {
     return {
       psId,
