@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { runMonitoringCycle } from "@/services/monitorService";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 60; // 60 seconds
 
 export async function GET(req: Request) {
   try {

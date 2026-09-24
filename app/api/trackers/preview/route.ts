@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getProblemStatement, normalizePsId, isValidPsIdFormat } from "@/services/sihScraper";
 
+export const maxDuration = 60; // 60 seconds
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();

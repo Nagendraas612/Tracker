@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import connectToDatabase from "@/lib/mongodb";
+
+export const maxDuration = 60; // 60 seconds
 import Tracker from "@/models/Tracker";
 import User from "@/models/User";
 import { getProblemStatement, normalizePsId, isValidPsIdFormat } from "@/services/sihScraper";

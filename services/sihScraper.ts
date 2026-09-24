@@ -104,7 +104,7 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
 
       const response = await axios.get(url, {
         httpsAgent,
-        timeout: 15000,
+        timeout: 45000,
         validateStatus: (status) => status >= 200 && status < 300,
         headers: {
           "User-Agent": "Mozilla/5.0 SIH-Tracker/1.0",
