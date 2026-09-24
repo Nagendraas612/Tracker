@@ -96,7 +96,12 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
   for (const baseUrl of SIH_URLS) {
     try {
       // The timestamp prevents an upstream/CDN cached HTML document from hiding new counts.
-      const url = `${baseUrl}?tracker_ts=${Date.now()}`;
+      let url = `${baseUrl}?tracker_ts=${Date.now()}`;
+      
+      if (process.env.SCRAPER_API_KEY) {
+        url = `http://api.scraperapi.com?api_key=${process.env.SCRAPER_API_KEY}&url=${encodeURIComponent(url)}`;
+      }
+
       const response = await axios.get(url, {
         httpsAgent,
         timeout: 15000,
