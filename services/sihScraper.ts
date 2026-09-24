@@ -93,18 +93,15 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
   }
 
   let lastError: any = null;
-  for (const baseUrl of SIH_URLS) {
-    try {
-      // The timestamp prevents an upstream/CDN cached HTML document from hiding new counts.
+  try {
+    const fetchPromises = SIH_URLS.map(async (baseUrl) => {
       let url = `${baseUrl}?tracker_ts=${Date.now()}`;
-      
       if (process.env.SCRAPER_API_KEY) {
         url = `http://api.scraperapi.com?api_key=${process.env.SCRAPER_API_KEY}&url=${encodeURIComponent(url)}`;
       }
-
       const response = await axios.get(url, {
         httpsAgent,
-        timeout: 45000,
+        timeout: 25000,
         validateStatus: (status) => status >= 200 && status < 300,
         headers: {
           "User-Agent": "Mozilla/5.0 SIH-Tracker/1.0",
@@ -114,13 +111,15 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
           Pragma: "no-cache",
         },
       });
-
       if (typeof response.data !== "string" || response.data.length === 0) {
         throw new Error("SIH returned an empty response");
       }
+      return response.data;
+    });
 
-      const $ = cheerio.load(response.data);
-      const psMap = new Map<string, PSData>();
+    const html = await Promise.any(fetchPromises);
+    const $ = cheerio.load(html);
+    const psMap = new Map<string, PSData>();
 
       $("table tr").each((_, tr) => {
         const cells = $(tr).children("td");
@@ -165,9 +164,8 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
       throw new Error("SIH response did not contain a recognised problem-statement table");
     } catch (err: any) {
       lastError = err;
-      console.error(`[SIH Scraper Error on ${baseUrl}]:`, err.message);
+      console.error(`[SIH Scraper Error]:`, err.errors || err.message || err);
     }
-  }
 
   if (memoryCache && memoryCache.data.size > 0) {
     return {
