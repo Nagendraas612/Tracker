@@ -27,7 +27,7 @@ const httpsAgent = new https.Agent({
   keepAlive: true,
 });
 
-const CACHE_TTL_MS = 15000; // 15 seconds cache
+const CACHE_TTL_MS = 15000;
 
 function getInitialSeedMap(): Map<string, PSData> {
   const map = new Map<string, PSData>();
@@ -49,51 +49,38 @@ function getInitialSeedMap(): Map<string, PSData> {
       };
       map.set(norm, data);
       const digits = norm.replace(/\D/g, "");
-      if (digits && digits !== norm) {
-        map.set(digits, data);
-      }
+      if (digits && digits !== norm) map.set(digits, data);
     });
   }
   return map;
 }
 
-let memoryCache: {
-  data: Map<string, PSData>;
-  timestamp: number;
-} | null = {
+let memoryCache: { data: Map<string, PSData>; timestamp: number } | null = {
   data: getInitialSeedMap(),
-  timestamp: 0, // Force fresh live fetch on first call
+  timestamp: 0,
 };
 
-/**
- * Normalizes a Problem Statement ID e.g. "sih26171" -> "SIH26171", "26171" -> "SIH26171"
- */
 export function normalizePsId(input: string): string {
   if (!input) return "";
   let trimmed = input.trim().toUpperCase();
   if (/^\d{3,5}$/.test(trimmed)) {
-    if (trimmed.startsWith("26")) {
-      trimmed = `SIH${trimmed}`;
-    } else {
-      trimmed = `SIH26${trimmed.padStart(3, "0")}`;
-    }
+    trimmed = trimmed.startsWith("26")
+      ? `SIH${trimmed}`
+      : `SIH26${trimmed.padStart(3, "0")}`;
   }
   return trimmed;
 }
 
-/**
- * Validates PS ID format e.g. SIH26171, SIH26001, or 26171
- */
 export function isValidPsIdFormat(psId: string): boolean {
   if (!psId) return false;
-  const normalized = normalizePsId(psId);
-  return /^SIH(26)?\d{3,5}$/i.test(normalized);
+  return /^SIH(26)?\d{3,5}$/i.test(normalizePsId(psId));
 }
 
-/**
- * Fetches the official SIH 2026 Problem Statement HTML page and parses all rows.
- * Returns a Map of PS ID to PSData.
- */
+function cleanCell($: cheerio.CheerioAPI, cell: cheerio.Element): string {
+  return $(cell).text().replace(/\s+/g, " ").trim();
+}
+
+/** Fetches and parses the current SIH problem-statement table. */
 export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
   psMap: Map<string, PSData>;
   fromCache: boolean;
@@ -101,119 +88,82 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
   error?: string;
 }> {
   const now = Date.now();
-
-  // Return cached result if valid and not force-refreshed
   if (!forceRefresh && memoryCache && memoryCache.data.size > 0 && now - memoryCache.timestamp < CACHE_TTL_MS) {
-    return {
-      psMap: memoryCache.data,
-      fromCache: true,
-      timestamp: new Date(memoryCache.timestamp),
-    };
+    return { psMap: memoryCache.data, fromCache: true, timestamp: new Date(memoryCache.timestamp) };
   }
 
   let lastError: any = null;
-
-  for (const url of SIH_URLS) {
+  for (const baseUrl of SIH_URLS) {
     try {
+      // The timestamp prevents an upstream/CDN cached HTML document from hiding new counts.
+      const url = `${baseUrl}?tracker_ts=${Date.now()}`;
       const response = await axios.get(url, {
         httpsAgent,
-        timeout: 12000,
+        timeout: 15000,
+        validateStatus: (status) => status >= 200 && status < 300,
         headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+          "User-Agent": "Mozilla/5.0 SIH-Tracker/1.0",
+          Accept: "text/html,application/xhtml+xml",
           "Accept-Language": "en-US,en;q=0.9",
-          "Cache-Control": "no-cache",
+          "Cache-Control": "no-cache, no-store, max-age=0",
           Pragma: "no-cache",
         },
       });
 
-      const html = response.data;
-      if (!html || typeof html !== "string") {
-        continue;
+      if (typeof response.data !== "string" || response.data.length === 0) {
+        throw new Error("SIH returned an empty response");
       }
 
-      const $ = cheerio.load(html);
+      const $ = cheerio.load(response.data);
       const psMap = new Map<string, PSData>();
 
-      // Parse main problem statement table rows
-      $("table").each((_, tbl) => {
-        $(tbl)
-          .find("> tbody > tr")
-          .each((__, tr) => {
-            const tds = $(tr).children("td");
-            if (tds.length >= 6) {
-              const org = tds.eq(1).text().replace(/\s+/g, " ").trim();
+      $("table tr").each((_, tr) => {
+        const cells = $(tr).children("td");
+        // SIH currently has: serial, organisation, title, category, PS ID,
+        // submission count, theme and deadline.
+        if (cells.length < 8) return;
 
-              let title = "";
-              const titleLink = tds.eq(2).find("a").first();
-              if (titleLink.length > 0) {
-                title = titleLink.text().replace(/\s+/g, " ").trim();
-              }
-              if (!title) {
-                const clone = tds.eq(2).clone();
-                clone.find(".modal, table, .style-2, script").remove();
-                title = clone.text().replace(/\s+/g, " ").trim();
-              }
+        const psIdRaw = cleanCell($, cells[4]).toUpperCase();
+        if (!(psIdRaw.startsWith("SIH") || /^\d+$/.test(psIdRaw))) return;
 
-              const category = tds.eq(3).text().replace(/\s+/g, " ").trim() || "Software";
-              const psIdRaw = tds.eq(4).text().replace(/\s+/g, " ").trim().toUpperCase();
-              const countText = tds.eq(5).text().replace(/\s+/g, " ").trim();
-              const theme = tds.eq(6).text().replace(/\s+/g, " ").trim() || "General";
-              const deadline = tds.eq(7).text().replace(/\s+/g, " ").trim() || "30 September 2026";
+        const titleCell = $(cells[2]).clone();
+        titleCell.find(".modal, table, .style-2, script").remove();
+        const title = titleCell.text().replace(/\s+/g, " ").trim();
+        const countText = cleanCell($, cells[5]);
+        const countMatch = countText.match(/(\d+)\s*\/\s*(\d+)/);
+        if (!countMatch) return;
 
-              let submitted = 0;
-              let maximum = 500;
-              const countMatch = countText.match(/(\d+)\s*\/\s*(\d+)/);
-              if (countMatch) {
-                submitted = parseInt(countMatch[1], 10);
-                maximum = parseInt(countMatch[2], 10);
-              }
+        const normalizedId = normalizePsId(psIdRaw);
+        const data: PSData = {
+          psId: normalizedId,
+          title: title || `Problem Statement ${normalizedId}`,
+          organization: cleanCell($, cells[1]) || "SIH 2026",
+          department: cleanCell($, cells[1]) || "SIH 2026",
+          category: cleanCell($, cells[3]) || "Software",
+          theme: cleanCell($, cells[6]) || "General",
+          submitted: Number.parseInt(countMatch[1], 10),
+          maximum: Number.parseInt(countMatch[2], 10),
+          deadline: cleanCell($, cells[7]) || "30 September 2026",
+          rawCountString: `${countMatch[1]}/${countMatch[2]}`,
+          lastFetched: new Date(),
+        };
 
-              if (psIdRaw.startsWith("SIH") || /^\d+$/.test(psIdRaw)) {
-                const normalizedId = normalizePsId(psIdRaw);
-                const psObj: PSData = {
-                  psId: normalizedId,
-                  title: title || `Problem Statement ${normalizedId}`,
-                  organization: org || "SIH 2026",
-                  department: org || "SIH 2026",
-                  category,
-                  theme,
-                  submitted,
-                  maximum,
-                  deadline,
-                  rawCountString: `${submitted}/${maximum}`,
-                  lastFetched: new Date(),
-                };
-
-                psMap.set(normalizedId, psObj);
-                const digitsOnly = normalizedId.replace(/\D/g, "");
-                if (digitsOnly && digitsOnly !== normalizedId) {
-                  psMap.set(digitsOnly, psObj);
-                }
-              }
-            }
-          });
+        psMap.set(normalizedId, data);
+        const digitsOnly = normalizedId.replace(/\D/g, "");
+        if (digitsOnly && digitsOnly !== normalizedId) psMap.set(digitsOnly, data);
       });
 
       if (psMap.size > 0) {
-        memoryCache = {
-          data: psMap,
-          timestamp: Date.now(),
-        };
-        return {
-          psMap,
-          fromCache: false,
-          timestamp: new Date(),
-        };
+        memoryCache = { data: psMap, timestamp: Date.now() };
+        return { psMap, fromCache: false, timestamp: new Date() };
       }
+      throw new Error("SIH response did not contain a recognised problem-statement table");
     } catch (err: any) {
       lastError = err;
-      console.error(`[SIH Scraper Error on ${url}]:`, err.message);
+      console.error(`[SIH Scraper Error on ${baseUrl}]:`, err.message);
     }
   }
 
-  // If live fetches failed, fall back to memory cache / seed data
   if (memoryCache && memoryCache.data.size > 0) {
     return {
       psMap: memoryCache.data,
@@ -223,44 +173,22 @@ export async function fetchAllProblemStatements(forceRefresh = false): Promise<{
     };
   }
 
-  return {
-    psMap: new Map(),
-    fromCache: false,
-    timestamp: new Date(),
-    error: lastError?.message || "Failed to fetch SIH data",
-  };
+  return { psMap: new Map(), fromCache: false, timestamp: new Date(), error: lastError?.message || "Failed to fetch SIH data" };
 }
 
-/**
- * Gets details for a single Problem Statement by ID.
- * Defaults to live fetch (forceRefresh: true) to ensure real-time accuracy.
- */
 export async function getProblemStatement(psIdInput: string, forceRefresh = true): Promise<PSData | null> {
   const psId = normalizePsId(psIdInput);
   if (!psId) return null;
-
   const result = await fetchAllProblemStatements(forceRefresh);
   const data = result.psMap.get(psId) || result.psMap.get(psIdInput.trim().toUpperCase());
-
   if (data) return data;
 
-  // Search case-insensitively across keys
-  let matchedVal: PSData | null = null;
-  const targetId = psId.toUpperCase();
-  const rawId = psIdInput.trim().toUpperCase();
-
-  result.psMap.forEach((val, key) => {
-    if (!matchedVal) {
-      const uKey = key.toUpperCase();
-      if (uKey === targetId || uKey === rawId) {
-        matchedVal = val;
-      }
-    }
+  let matched: PSData | null = null;
+  result.psMap.forEach((value, key) => {
+    if (!matched && (key.toUpperCase() === psId || key.toUpperCase() === psIdInput.trim().toUpperCase())) matched = value;
   });
+  if (matched) return matched;
 
-  if (matchedVal) return matchedVal;
-
-  // Fallback demo mode only if explicitly enabled
   if (process.env.DEMO_MODE === "true") {
     return {
       psId,
@@ -276,6 +204,5 @@ export async function getProblemStatement(psIdInput: string, forceRefresh = true
       lastFetched: new Date(),
     };
   }
-
   return null;
 }
