@@ -76,7 +76,7 @@ export function isValidPsIdFormat(psId: string): boolean {
   return /^SIH(26)?\d{3,5}$/i.test(normalizePsId(psId));
 }
 
-function cleanCell($: cheerio.CheerioAPI, cell: cheerio.Element): string {
+function cleanCell($: cheerio.CheerioAPI, cell: any): string {
   return $(cell).text().replace(/\s+/g, " ").trim();
 }
 
